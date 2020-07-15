@@ -21,14 +21,14 @@ $(document).ready(function(){
     changeColor();
     $("h2,h4").fadeOut(1000).fadeIn(1000);
     $.ajax(settings).done(function(result){
-        $("h2").html(`<i class="fa fa-quote-left" style="font-size:36px"></i>${result.content}`);
+        $("h2").html(`<i class="fa fa-quote-left" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;${result.content}`);
         $("h4").text(`-${result.originator.name}`);
     });
     $(".new-quote-button").click(function(){
         changeColor();
         $("h2,h4").fadeOut(1000).fadeIn(1000);
         $.ajax(settings).done(function(result){
-            $("h2").html(`<i class="fa fa-quote-left" style="font-size:36px"></i>${result.content}`);
+            $("h2").html(`<i class="fa fa-quote-left" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;${result.content}`);
             $("h4").text(`-${result.originator.name}`);
         });
     });
