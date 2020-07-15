@@ -23,9 +23,6 @@ p{
     justify-content: space-between;
     align-items: center;
 }
-.share-button{
-    margin-right: 5px;
-}
 .new-quote-button{
     width: 100px;
     height: 40px;
